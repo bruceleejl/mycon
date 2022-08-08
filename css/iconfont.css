@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3560209 */
+  src: url('iconfont.woff2?t=1659339267896') format('woff2'),
+       url('iconfont.woff?t=1659339267896') format('woff'),
+       url('iconfont.ttf?t=1659339267896') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 22px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  left: 240px;
+  position: absolute;
+  color: white;
+  cursor:pointer;
+}
+.icon-sousuo:before {
+  content: "\e8ba";
+}
+

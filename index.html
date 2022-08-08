@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/iconfonta.css">
+    <link rel="stylesheet" href="css/iconfontb.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>喜马拉雅</title>
+    <style>
+        .icon {
+          width: 1em;
+          height: 1em;
+          vertical-align: -0.15em;
+          font-size: 22px;
+          fill: currentColor;
+          overflow: hidden;
+        }
+        </style>
+</head>
+<body>
+    <!-- 固定定位下载 -->
+    <div class="win_dwon">
+        <img src="./images/pc_xiazai.png" alt="">
+        <p>云端同步、一键下载</p>
+        <p>更好的收听体验！</p>
+        <a href="" type="button">下载客户端</a>
+    </div>
+    <!-- 点击登录弹窗背景 -->
+    <div class="login_bg">
+        
+    </div>
+    <div class="login_win">
+        <!-- 密码登录or短信登录/注册选项 -->
+        <div class="login_top">
+            <ul>
+                <li class="pwd_log">密码登录</li>
+                <li class="dx_res">短信登录/注册</li>
+            </ul>
+        </div>
+        <!-- 密码登录 -->
+        <div class="login_pwd">
+            <div class="phonecon">
+                <select class="selphone">
+                    <option value="">+86</option>
+                    <option value="">+886</option>
+                    <option value="">+852</option>
+                    <option value="">+853</option>
+                </select>
+                <input class="phoneipt" type="text" placeholder="手机号或邮箱">
+            </div>
+            <input type="text" placeholder="密码">
+            <button id="login_up">登录</button>
+            <!-- 登录按钮下信息 -->
+            <div class="login_dcon">
+                <div>
+                    <input type="checkbox" style="display: inline-block;">
+                    <p style="display: inline-block;">下次自动登录</p>
+                </div>
+                <span>忘记密码</span>
+            </div>
+        </div>
+        <!-- 短信登录/注册 -->
+        <div class="login_res">
+            <select>
+                <option value="">+86</option>
+                <option value="">+886</option>
+                <option value="">+852</option>
+                <option value="">+853</option>
+            </select>
+            <input type="text" placeholder="手机号">
+            <input type="text" placeholder="验证码">
+            <button>获取验证码</button>
+            <button>登录</button>
+            <!-- 登录按钮下信息 -->
+            <div class="res_dcon">
+                <p>未注册手机登录时会自动创建新账号</p>
+                <p>且代表您已同意 <a href="">《用户服务协议》</a>和<a href="">《隐私政策》</a> </p>
+            </div>
+        </div>
+        <div class="order_log">
+            <div class="order_txt">
+                <span class="order_line"></span><p>第三方账号登录</p><span class="order_line"></span>
+            </div>
+                <ul class="order_logcon">
+                    <li>
+                        <a href="">
+                            <img src="./images/wechat.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/qq.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/weibo.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <p>下载<a href="">喜马拉雅</a>，体验更多内容</p>
+        </div>
+        <div class="logbot_img">
+            
+        </div>
+        <!-- 登录关闭 -->
+        <div class="log_exit">
+            <img src="./images/exit.png" alt="">
+        </div>
+    </div>
+    <header>
+        <div class="headtop">
+            <div class="headtop_l">
+                <a href=""><img src="./images/logo_2021_554d3ee.png" alt=""></a>
+            </div>
+            <nav>
+                <a href="#">发现</a>
+                    <div id="faxian" class="faxian_tab_link faxian">频道
+                        <img src="./images/xia.png" alt="" width="10px" id="topopen_img" class="">
+                        <ul >
+                            <div class="ultab">
+                                <li><a href="">小说</a></li>
+                                <li><a href="">儿童</a></li>
+                                <li><a href="">相声小说</a></li>
+                                <li><a href="">评书</a></li>
+                                <li><a href="">娱乐</a></li>
+                                <li><a href="">悬疑</a></li>
+                                <li><a href="">人文</a></li>
+                                <li><a href="">国学</a></li>
+                                <li><a href="">头条</a></li>
+                                <li><a href="">音乐</a></li>
+                                <li><a href="">历史</a></li>
+                                <li><a href="">情感</a></li>
+                                <li><a href="">投资理财</a></li>
+                                <li><a href="">个人提升</a></li>
+                                <li><a href="">健康</a></li>
+                                <li><a href="">生活</a></li>
+                                <li><a href="">影视</a></li>
+                                <li><a href="">商业管理</a></li>
+                                <li><a href="">英语</a></li>
+                                <li><a href="">少儿素养</a></li>
+                                <li><a href="">科技</a></li>
+                                <li><a href="">教育考试</a></li>
+                                <li><a href="">体育</a></li>
+                                <li><a href="">小语种</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                <a href="#">电台</a>
+            </nav>
+            <div class="topsearch">
+                <input type="text" placeholder="  专辑/声音/主播">
+                <button></button>
+                <span class="iconfont icon-sousuo"></span>
+            </div>
+            <div class="topright">
+                <a href="" class="up_selcd">
+                    <div class="topright_one" style="height: 78px;">
+                        <img src="./images/upload.png" alt="">
+                        <img src="./images/upload (1).png" alt="">
+                        <span>上传</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="topright_two">
+                        <img src="./images/czzx.png" alt="">
+                        <img src="./images/czzx(1).png" alt="">
+                        <span>创作者中心</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="topright_three">
+                        <img src="./images/a16gl-A.png" alt="">
+                        <img src="./images/a16gl-A (1).png" alt="">
+                        <span>有声出版</span>
+                    </div>
+                </a>
+                <a href="" class="pc_sel" style="height: 80px;">
+                    <div class="topright_four">
+                        <img src="./images/pc.png" alt="">
+                        <img src="./images/pc (1).png" alt="">
+                        <span>客户端</span>
+                        <span>送VIP</span>
+                    </div>
+                </a>
+                <a href="###" id="login_icon" style="height: 80px;">
+                    <img src="./images/default_9c0f537.png" alt="">
+                </a>
+            </div>
+            <div class="upload_selcd">
+                <div class="selcd_u">
+                    <a href="">
+                        <div class="u_o">
+                            <img src="./images/bot02.png" alt="">
+                            <span>音频剪辑</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="u_one">
+                            <img src="./images/upload.png" alt="">
+                            <img src="./images/upload (1).png" alt="">
+                            <span>上传节目</span>
+                        </div>
+                    </a>
+                    <a href="" class="myshowu">
+                        <div class="u_two">
+                            <img src="./images/video0.png" alt="">
+                            <img src="./images/video (1).png" alt="">
+                            <span>我的节目</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="u_three">
+                            <img src="./images/a16gl-V.png" alt="">
+                            <img src="./images/a16gl-V (1).png" alt="">
+                            <span>主播入驻</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="selcd_d">
+                    <img id="showone" src="./images/audio_editor_1eca741.png" alt="">
+                    <img id="myshow" src="./images/approve_entrance_193bf71.jpg" alt="">
+                </div>
+            </div>
+            <!-- 客户端选项卡 -->
+            <div class="pc_selcd">
+                <img src="./images/pc_banner_f6d4929.png" alt="">
+            </div>
+            <!-- 登录选项卡 -->
+            <div class="login_selcd">
+                <div class="login_u">
+                    <img src="./images/Bitmap_5973392.png" alt="">
+                    <span>未登录</span>
+                </div>
+                <div class="login_d">
+                    <p>快速登录</p>
+                    <ul class="log_wrap">
+                        <li>
+                            <a href="">
+                                <img src="./images/pclog.png" alt="">
+                                <span>账号</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./images/ewm.png" alt="">
+                                <span>二维码</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./images/wechat.png" alt="">
+                                <span>微信</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./images/weibo.png" alt="">
+                                <span>微博</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./images/qq.png" alt="">
+                                <span>QQ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+            <div class="topimg">
+                <div id="one">
+                    <ul id="box">
+                        <li>
+                            <img src="./images/lunbo.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/lunbo01.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/lunbo02.jpg" alt="">
+                        </li>
+                    </ul>
+                    <ol id="list">
+                        <li class="current"></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                    <span id="left">←</span>
+                    <span id="right">→</span>
+                </div>
+            </div>
+        <!-- <div class="main"> -->
+            <nav>
+                <div class="type">
+                    <div class="typecenter">
+                        <div class="type_left">
+                            <a href="#">
+                                <div class="imgone">
+                                    <img src="images/分类.png" alt="">
+                                    <img src="images/分类01.png" alt="">
+                                    <span>分类</span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="imgtwo">
+                                    <img src="images/频道.png" alt="">
+                                    <img src="images/频道01.png" alt="">
+                                    <span>频道</span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="imgthree">
+                                    <img src="images/排行榜.png" alt="">
+                                    <img src="images/排行榜01.png" alt="">
+                                    <span>排行榜</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="type_right">
+                            <div class="type_right_center">
+                                <div class="right_one">
+                                    <a href="./html/list.html"><h5>小说&nbsp;</h5></a>
+                                    <span>|</span>
+                                    <a href=""><span>男频</span></a>
+                                    <a href=""><span>女频</span></a>
+                                </div>
+                                <div class="right_one">
+                                    <a href=""><h5>相声&nbsp;</h5></a>
+                                    <span>|</span>
+                                    <a href=""><span>郭麒麟</span></a>
+                                    <a href=""><span>岳云鹏</span></a>
+                                </div>
+                                <div class="right_one">
+                                    <a href=""><h5>音乐&nbsp;</h5></a>
+                                    <span>|</span>
+                                    <a href=""><span>电音</span></a>
+                                    <a href=""><span>流行</span></a>
+                                </div>
+                                <div class="right_one">
+                                    <a href=""><h5>商业&nbsp;</h5></a>
+                                    <span>|</span>
+                                    <a href=""><span>市场营销</span></a>
+                                    <a href=""><span>管理</span></a>
+                                </div>
+                                <div class="right_one">
+                                    <a href=""><h5>健康&nbsp;</h5></a>
+                                    <span>|</span>
+                                    <a href=""><span>饮食</span></a>
+                                    <a href=""><span>科普</span></a>
+                                </div>
+                                <div class="right_one">
+                                    <a href=""><h5>科技&nbsp;</h5></a>
+                                    <span>|</span>
+                                    <a href=""><span>互联网</span></a>
+                                    <a href=""><span>人工智能</span></a>
+                                </div>
+                                <div class="right_one">
+                                    <a href=""><h5>英语&nbsp;</h5></a>
+                                    <span>|</span>
+                                    <a href=""><span>听力</span></a>
+                                    <a href=""><span>实用</span></a>
+                                </div>
+                                <div class="right_one">
+                                    <a href=""><h5>头条&nbsp;</h5></a>
+                                    <span>|</span>
+                                    <a href=""><span>实施快讯</span></a>
+                                    <a href=""><span>民生</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="youlike">
+                <div class="nextone">
+                    <p>猜你喜欢</p>
+                    <a href="">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-shuaxin"></use>
+                        </svg>
+                        换一批
+                    </a>
+                </div>
+                <div class="loginbox">
+                    <div class="loginbox_top">
+                        <img src="./images/default_9c0f537.png" alt="">
+                        <p>登录一下，你就知道</p>
+                    </div>
+                    <div class="loginbox_bottom">
+                        <button>登录</button>
+                    </div>
+                </div>
+                <div class="youlikebox">
+                    <ul class="youlike_img">
+                        <li>
+                            <p>
+                                <a href="#">
+                                    <img src="images/下载.png" alt="">
+                                    <img src="./images/book01.jpg" alt="">
+                                </a>
+                                <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                <span>中国刑警</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#">
+                                    <img src="images/下载.png" alt="">
+                                    <img src="./images/book02.jpg" alt="">
+                                </a>
+                                <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                <span>中国刑警</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#">
+                                    <img src="images/下载.png" alt="">
+                                    <img src="./images/book04.jpg" alt="">
+                                </a>
+                                <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                <span>中国刑警</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#">
+                                    <img src="images/下载.png" alt="">
+                                    <img src="./images/book06.jpg" alt="">
+                                </a>
+                                <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                <span>中国刑警</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#">
+                                    <img src="images/下载.png" alt="">
+                                    <img src="./images/book07.jpg" alt="">
+                                </a>
+                                <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                <span>中国刑警</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rightdow">
+                    <p>下载客户端</p>
+                    <img src="./images/QRCode_ad452ef.png" alt="">
+                    <button>iPhone</button>
+                    <button>Android</button>                    
+                </div>
+            </div>
+            <div class="main_con">
+                <div class="con_left">
+                    <div class="con_left_t">
+                        <span>|</span>
+                        <h3>有声书</h3>
+                        <span><a href="">雪中悍刀行 | </a></span>
+                        <span><a href="">凡人修仙传 | </a></span>
+                        <span><a href="">吞噬星空 | </a></span>
+                        <span><a href="">鬼吹灯 | </a></span>
+                        <span><a href="">三体 | </a></span>
+                        <span><a href="">将夜</a></span>
+                        <span><a href="">更多</a></span>
+                    </div>
+                    <div class="con_left_d">
+                        <div class="youlikebox">
+                            <ul class="youlike_img">
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book08.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book09.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book03.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book05.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book06.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="youlikebox">
+                            <ul class="youlike_img">
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book07.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book08.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book10.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book03.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book02.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="youlikebox">
+                            <ul class="youlike_img">
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book06.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book08.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book02.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book01.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book10.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="con_right">
+                    <p class="con_right_top">有声书新品榜</p>
+                    <ul>
+                        <li class="con_right_li">
+                            <a href=""><img src="./images/新品榜01.jpg" alt="">
+                            <span>【新品限免】天字第一当丨紫襟领衔多人有声剧丨麻衣神算子作者新作</span>
+                            <p>&nbsp;&nbsp;有声的紫襟</p>
+                            </a>
+                        </li>
+                        <li class="con_right_li">
+                            <a href=""><img src="./images/right03.jpg" alt="">
+                            <span>【新品限免】天字第一当丨紫襟领衔多人有声剧丨麻衣神算子作者新作</span>
+                            <p>&nbsp;&nbsp;有声的紫襟</p>
+                            </a>
+                        </li>
+                        <li class="con_right_li">
+                            <a href=""><img src="./images/right04.jpg" alt="">
+                            <span>【新品限免】天字第一当丨紫襟领衔多人有声剧丨麻衣神算子作者新作</span>
+                            <p>&nbsp;&nbsp;有声的紫襟</p>
+                            </a>
+                        </li>
+                        <li class="con_right_lii">
+                            <p><a href=""> 4   【新品限免】灵境行者丨卖报小郎君口碑新作丨紫襟领衔多人有声剧</a></p>
+                        </li>
+                        <li class="con_right_lii">
+                            <p><a href=""> 5   【新品限免】灵境行者丨卖报小郎君口碑新作丨紫襟领衔多人有声剧</a></p>
+                        </li>
+                        <li class="con_right_lii">
+                            <p><a href=""> 6   【新品限免】灵境行者丨卖报小郎君口碑新作丨紫襟领衔多人有声剧</a></p>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+            <div class="main_con">
+                <div class="con_left">
+                    <div class="con_left_t">
+                        <span>|</span>
+                        <h3>有声书</h3>
+                        <span><a href="">雪中悍刀行  |</a></span>
+                        <span><a href="">凡人修仙传  |</a></span>
+                        <span><a href="">吞噬星空  |</a></span>
+                        <span><a href="">鬼吹灯  |</a></span>
+                        <span><a href="">三体  |</a></span>
+                        <span><a href="">将夜</a></span>
+                        <span><a href="">更多</a></span>
+                    </div>
+                    <div class="con_left_d">
+                        <div class="youlikebox">
+                            <ul class="youlike_img">
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book05.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book04.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book02.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book08.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book07.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="youlikebox">
+                            <ul class="youlike_img">
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book06.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book09.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book10.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book05.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book07.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="youlikebox">
+                            <ul class="youlike_img">
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book08.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book02.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book03.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book05.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">
+                                            <img src="images/下载.png" alt="">
+                                            <img src="./images/book06.jpg" alt="">
+                                        </a>
+                                        <a href="#">中国刑警中国刑警中国刑警中国刑警中国刑警</a>
+                                        <span>中国刑警</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="con_right">
+                    <p class="con_right_top">有声书新品榜</p>
+                    <ul>
+                        <li class="con_right_li">
+                            <a href=""><img src="./images/bottom01.jpg" alt="">
+                            <span>【新品限免】天字第一当丨紫襟领衔多人有声剧丨麻衣神算子作者新作</span>
+                            <p>&nbsp;&nbsp;有声的紫襟</p>
+                            </a>
+                        </li>
+                        <li class="con_right_li">
+                            <a href=""><img src="./images/right02.jpg" alt="">
+                            <span>【新品限免】天字第一当丨紫襟领衔多人有声剧丨麻衣神算子作者新作</span>
+                            <p>&nbsp;&nbsp;有声的紫襟</p>
+                            </a>
+                        </li>
+                        <li class="con_right_li">
+                            <a href=""><img src="./images/bottom03.jpg" alt="">
+                            <span>【新品限免】天字第一当丨紫襟领衔多人有声剧丨麻衣神算子作者新作</span>
+                            <p>&nbsp;&nbsp;有声的紫襟</p>
+                            </a>
+                        </li>
+                        <li class="con_right_lii">
+                            <p><a href=""> 4   【新品限免】灵境行者丨卖报小郎君口碑新作丨紫襟领衔多人有声剧</a></p>
+                        </li>
+                        <li class="con_right_lii">
+                            <p><a href=""> 5   【新品限免】灵境行者丨卖报小郎君口碑新作丨紫襟领衔多人有声剧</a></p>
+                        </li>
+                        <li class="con_right_lii">
+                            <p><a href=""> 6   【新品限免】灵境行者丨卖报小郎君口碑新作丨紫襟领衔多人有声剧</a></p>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+            <div class="bottom_con">
+                <div class="bottom_colone">
+                    <div class="botone_top">
+                        <span><a href="">热播榜</a></span>
+                        <span><a href="">全部 ></a></span>
+                    </div>
+                    <div class="botone_main">
+                        <ul>
+                            <li>
+                                <a class="botmain_con" href="">
+                                    <div class="botone_main_img">
+                                        <img src="./images/bottom01.jpg" alt="">
+                                    </div>
+                                    <div class="botone_main_txt">
+                                        <div class="txt_one">
+                                            郭德纲30年相声精选【超全过瘾版】
+                                        </div>
+                                        <div class="txt_two">
+                                            德云社郭德纲相声VIP
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="botmain_conn" href="">
+                                    <div class="botone_main_img">
+                                        <img src="./images/right03.jpg" alt="">
+                                    </div>
+                                    <div class="botone_main_txt">
+                                        <div class="txt_one">
+                                            郭德纲30年相声精选【超全过瘾版】
+                                        </div>
+                                        <div class="txt_two">
+                                            德云社郭德纲相声VIP
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="botmain_con" href="">
+                                    <div class="botone_main_img">
+                                        <img src="./images/right04.jpg" alt="">
+                                    </div>
+                                    <div class="botone_main_txt">
+                                        <div class="txt_one">
+                                            郭德纲30年相声精选【超全过瘾版】
+                                        </div>
+                                        <div class="txt_two">
+                                            德云社郭德纲相声VIP
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="bottab">
+                            <li>
+                                <p class=""><a href="">4&nbsp;&nbsp;重生八零，媳妇有点辣 | 免费多人有声剧</a></p>
+                            </li>
+                            <li>
+                                <p class="newtext"><a href="">5&nbsp;&nbsp;米小圈上学记：一二三年级</a></p>
+                            </li>
+                            <li>
+                                <p class=""><a href="">6&nbsp;&nbsp;【新品限免】天字第一当丨紫襟领衔多人有声剧丨麻衣神算子作者新作</a></p>
+                            </li>
+                            <li>
+                                <p class="newtext"><a href="">7&nbsp;&nbsp;上门龙婿|至尊龙婿叶辰萧初然</a></p>
+                            </li>
+                            <li>
+                                <p class=""><a href="">8&nbsp;&nbsp;一剑独尊（叶玄叶灵 | 有声的紫襟 | 男女双播）</a></p>
+                            </li>
+                            <li>
+                                <p class="newtext"><a href="">9&nbsp;&nbsp;雪中悍刀行【第一季】 无删减版免费听|大斌</a></p>
+                            </li>
+                            <li>
+                                <p class=""><a href="">10&nbsp;&nbsp;晚安妈妈睡前故事</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom_colone">
+                    <div class="botone_top_two">
+                        <span><a href="">新品榜</a></span>
+                        <span><a href="">全部 ></a></span>
+                    </div>
+                    <div class="botone_main">
+                        <ul>
+                            <li>
+                                <a class="botmain_con" href="">
+                                    <div class="botone_main_img">
+                                        <img src="./images/right03.jpg" alt="">
+                                    </div>
+                                    <div class="botone_main_txt">
+                                        <div class="txt_one">
+                                            郭德纲30年相声精选【超全过瘾版】
+                                        </div>
+                                        <div class="txt_two">
+                                            德云社郭德纲相声VIP
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="botmain_conn" href="">
+                                    <div class="botone_main_img">
+                                        <img src="./images/right05.jpg" alt="">
+                                    </div>
+                                    <div class="botone_main_txt">
+                                        <div class="txt_one">
+                                            郭德纲30年相声精选【超全过瘾版】
+                                        </div>
+                                        <div class="txt_two">
+                                            德云社郭德纲相声VIP
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="botmain_con" href="">
+                                    <div class="botone_main_img">
+                                        <img src="./images/bottom01.jpg" alt="">
+                                    </div>
+                                    <div class="botone_main_txt">
+                                        <div class="txt_one">
+                                            郭德纲30年相声精选【超全过瘾版】
+                                        </div>
+                                        <div class="txt_two">
+                                            德云社郭德纲相声VIP
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="bottab">
+                            <li>
+                                <p class=""><a href="">4&nbsp;&nbsp;十分钟新闻早餐</a></p>
+                            </li>
+                            <li>
+                                <p class="newtext"><a href="">5&nbsp;&nbsp;【新品限免】头狼丨头陀渊工作室丨都市热血爽文丨多人有声剧</a></p>
+                            </li>
+                            <li>
+                                <p class=""><a href="">6&nbsp;&nbsp;《哈利·波特》1-7部精品中文有声书全集| J.K.罗琳原著，光合积木演播</a></p>
+                            </li>
+                            <li>
+                                <p class="newtext"><a href="">7&nbsp;&nbsp;【新品限免】灵境行者丨卖报小郎君口碑新作丨紫襟领衔多人有声剧</a></p>
+                            </li>
+                            <li>
+                                <p class=""><a href="">8&nbsp;&nbsp;金错刀频道</a></p>
+                            </li>
+                            <li>
+                                <p class="newtext"><a href="">9&nbsp;&nbsp;蒙曼讲红楼梦｜百家讲坛名师开讲经典名著</a></p>
+                            </li>
+                            <li>
+                                <p class=""><a href="">10&nbsp;&nbsp;【高甜剧场】星汉灿烂，幸甚至哉|吴磊&赵露思主演电视剧原著|沈念如/倔强的小红领衔多人有声剧|月升沧海</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom_colone">
+                    <div class="botone_top_three">
+                        <span><a href="">付费畅销榜</a></span>
+                        <span><a href="">全部 ></a></span>
+                    </div>
+                    <div class="botone_main">
+                        <ul class="bot_tab">
+                            <li>
+                                <a class="botmain_con" href="">
+                                    <div class="botone_main_img">
+                                        <img src="./images/right04.jpg" alt="">
+                                    </div>
+                                    <div class="botone_main_txt">
+                                        <div class="txt_one">
+                                            郭德纲30年相声精选【超全过瘾版】
+                                        </div>
+                                        <div class="txt_two">
+                                            德云社郭德纲相声VIP
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="botmain_conn" href="">
+                                    <div class="botone_main_img">
+                                        <img src="./images/right01.jpg" alt="">
+                                    </div>
+                                    <div class="botone_main_txt">
+                                        <div class="txt_one">
+                                            郭德纲30年相声精选【超全过瘾版】
+                                        </div>
+                                        <div class="txt_two">
+                                            德云社郭德纲相声VIP
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="botmain_con" href="">
+                                    <div class="botone_main_img">
+                                        <img src="./images/right02.jpg" alt="">
+                                    </div>
+                                    <div class="botone_main_txt">
+                                        <div class="txt_one">
+                                            郭德纲30年相声精选【超全过瘾版】
+                                        </div>
+                                        <div class="txt_two">
+                                            德云社郭德纲相声VIP
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="bottab">
+                            <li>
+                                <p class=""><a href="">4&nbsp;&nbsp;西游记少儿版 | 儿童睡前故事</a></p>
+                            </li>
+                            <li>
+                                <p class="newtext"><a href="">5&nbsp;&nbsp;大奉打更人丨头陀渊丨搞笑&修仙VIP免费有声小说</a></p>
+                            </li>
+                            <li>
+                                <p class=""><a href="">6&nbsp;&nbsp;《哈利·波特》1-7部精品中文有声书全集| J.K.罗琳原著，光合积木演播</a></p>
+                            </li>
+                            <li>
+                                <p class="newtext"><a href="">7&nbsp;&nbsp;官方正版·新概念英语（1-4册）</a></p>
+                            </li>
+                            <li>
+                                <p class=""><a href="">8&nbsp;&nbsp;口袋里的超级坦克之神秘海底城｜爆笑校园｜奇幻冒险</a></p>
+                            </li>
+                            <li>
+                                <p class="newtext"><a href="">9&nbsp;&nbsp;三国演义 | 儿童睡前故事 | 谢涛叔叔演播</a></p>
+                            </li>
+                            <li>
+                                <p class=""><a href="">10&nbsp;&nbsp;猴子警长探案记：警察学校 | 宝宝巴士故事</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom_colone">
+                    <div class="botone_top_four">
+                        <span><a href="">听单推荐</a></span>
+                        <span><a href="">全部 ></a></span>
+                    </div>
+                    <div class="bot_r">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="bot_r_one">
+                                        <img src="./images/bot_r01.jpg" alt="">
+                                        <h6>8月投资策略报告</h6>
+                                        <div class="bot_r_o">
+                                            <img src="./images/video.png" alt="">
+                                            <span>1张专辑</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="bot_r_two">
+                                        <div class="bot_r_towimg">
+                                            <img src="./images/bot_r03.jpg" alt="">
+                                        </div>
+                                        <div class="bot_r_txt">
+                                            <div class="txt_rone">
+                                                20个热门职业科普,60位一线从业者经验分享
+                                            </div>
+                                            <div class="txt_rtwo">
+                                                <img src="./images/audio.png" alt="">
+                                                <span>8首声音</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="bot_r_two">
+                                        <div class="bot_r_towimg">
+                                            <img src="./images/bot_r02.jpg" alt="">
+                                        </div>
+                                        <div class="bot_r_txt">
+                                            <div class="txt_rone">
+                                                20个热门职业科普,60位一线从业者经验分享
+                                            </div>
+                                            <div class="txt_rtwo">
+                                                <img src="./images/audio.png" alt="">
+                                                <span>8首声音</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="bot_r_two">
+                                        <div class="bot_r_towimg">
+                                            <img src="./images/bot_r03.jpg" alt="">
+                                        </div>
+                                        <div class="bot_r_txt">
+                                            <div class="txt_rone">
+                                                20个热门职业科普,60位一线从业者经验分享
+                                            </div>
+                                            <div class="txt_rtwo">
+                                                <img src="./images/audio.png" alt="">
+                                                <span>8首声音</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="bot_r_two">
+                                        <div class="bot_r_towimg">
+                                            <img src="./images/bot_r02.jpg" alt="">
+                                        </div>
+                                        <div class="bot_r_txt">
+                                            <div class="txt_rone">
+                                                20个热门职业科普,60位一线从业者经验分享
+                                            </div>
+                                            <div class="txt_rtwo">
+                                                <img src="./images/audio.png" alt="">
+                                                <span>8首声音</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottoms">
+                <div class="bottoms_list">
+                    <ul class="botlist">
+                        <li class="botlists">
+                            <a href="">
+                                <img src="./images/bot01.png" alt="">
+                                <p>开放平台</p>
+                                <p>对接海量精彩内容</p>
+                            </a>
+                        </li>
+                        <li class="botlists">
+                            <a href="">
+                                <img src="./images/bot02.png" alt="">
+                                <p>云剪辑</p>
+                                <p>在线音频剪辑神奇</p>
+                            </a>
+                        </li>
+                        <li class="botlists">
+                            <a href="">
+                                <img src="./images/bot03.png" alt="">
+                                <p>主播培训</p>
+                                <p>兼职副业，兴趣赚钱</p>
+                            </a>
+                        </li>
+                        <li class="botlists">
+                            <a href="">
+                                <img src="./images/bot04.png" alt="">
+                                <p>小雅智能</p>
+                                <p>智能硬件，连接赋能</p>
+                            </a>
+                        </li>
+                        <li class="botlists">
+                            <a href="">
+                                <img src="./images/bot05.png" alt="">
+                                <p>车联网平台</p>
+                                <p>自在出行，听我想听</p>
+                            </a>
+                        </li>
+                        <li class="botlists">
+                            <a href="">
+                                <img src="./images/bot06.png" alt="">
+                                <p>企业版</p>
+                                <p>员工学习，企业买单</p>
+                            </a>
+                        </li>
+                        <li class="botbtn">
+                            <button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机端</button>
+                            <img src="./images/windows-fill.png" alt="">
+                            <button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电脑端</button>
+                            <img src="./images/down.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="botlink">
+                    <p class="botlink_p">喜马拉雅是专业的音频分享平台，汇集了有声小说、有声读物、有声书、儿童睡前故事、相声小品、鬼故事等数亿条音频。随时随地，听我想听。
+                        <img src="./images/xia.png" alt="" id="open_img" class="">
+                    </p>
+                    <!-- <div class="botbox"> -->
+                            <!-- <div class="botlink_icon"  id="link_open">
+                                <img src="./images/book0.jpg/xia.png" alt="" id="open_img" class="">
+                                <img src="./images/book0.jpg/shang.png" alt="">
+                            </div> -->
+                            <div class="boxcon">
+                                <div class="linkone">
+                                    <p>快捷入口</p>
+                                    <ul class="boxul1">
+                                        <li><a href="">有声小说</a></li>
+                                        <li><a href="">听小说</a> </li>
+                                        <li><a href="">有声问答</a></li>
+                                        <li><a href="">哈利波特</a></li>
+                                        <li><a href="">电台FM</a></li>
+                                        <li><a href="">热门话题</a></li>
+                                        <li><a href="">有声书</a></li>
+                                        <li><a href="">儿童故事</a></li>
+                                        <li><a href="">儿歌</a></li>
+                                        <li><a href="">相声</a></li>
+                                        <li><a href="">评书</a></li>
+                                        <li><a href="">广播剧</a></li>
+                                        <li><a href="">音乐</a></li>
+                                        <li><a href="">戏曲</a></li>
+                                    </ul>
+                                </div>
+                                <div class="linktwo">
+                                    <p>友情链接</p>
+                                    <ul class="boxul2">
+                                        <li><a href="">学习啦</a></li>
+                                        <li><a href="">品牌排行</a></li>
+                                        <li><a href="">齐家网</a></li>
+                                        <li><a href="">发烧友</a></li>
+                                        <li><a href="">教学资源网</a></li>
+                                        <li><a href="">软件下载</a></li>
+                                        <li><a href="">法律快车</a></li>
+                                        <li><a href="">黄页88网</a></li>
+                                        <li><a href="">环球网校</a></li>
+                                        <li><a href="">高三网</a></li>
+                                        <li><a href="">沪江英语</a></li>
+                                        <li><a href="">有途网</a></li>
+                                        <li><a href="">看准网</a></li>
+                                        <li><a href="">+友链QQ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                    <!-- </div> -->
+                    <div class="botins">
+                        <p>地址：上海市浦东新区张江丹桂路799号国创中心三期1-2号楼  客服热线：400-838-5616  举报邮箱：jubao@ximalaya.com <a>《举报受理和处置管理办法》</a></p>
+                        <p><a>营业执照</a>   |   信息网络传播视听节目许可证：1908287号  |  互联网直播服务备案号：沪ILS备201708210007  |  网络文化经营许可证：沪网文【2019】5471-359号  |  <a>沪ICP备13027243号-3</a></p>
+                        <p>广播电视节目制作经营许可证：(沪)字第02126号  |  出版物经营许可证：新出发沪零字第K8265号  |  增值电信业务经营许可证：沪B2-20200133  |  <a>酒类商品零售许可证：JY13101120228795-JL</a></p>
+                        <p>教育移动互联网应用程序备案：教APP备3100590号  |  <a>食品经营许可证：JY13101120228795</a>  |  <a>互联网药品信息服务资格证：(沪)-经营性-2019-0049</a>  |   <img src="./images/icp_d0289dc.png" alt="">沪公网安备 31011502005603号</p>
+                        <p>Copyright © 2012-2022 www.ximalaya.com lnc. ALL Rights Reserved  |  <a><img src="./images/icon_email_c8834ec.png" alt=""> 上海互联网举报中心</a>  |  <a href=""><img src="./images/report_13a6134.png" alt="">  网上有害信息举报专区</a>   |    
+                            <div class="bot_lunbo">
+                            <ul class="lunbo_icon">
+                                <li><img src="./images/second_middle_h_img.png" alt=""></li>
+                                <li><img src="./images/first_middle_h_img.png" alt=""></li>
+                            </ul>
+                        </div>
+                        </p>
+                        <ul class="callme">
+                            <li><a href="">关于我们</a></li>
+                            <li><span>|</span><a href="">联系我们</a></li>
+                            <li><span>|</span><a href="">求助辟谣</a></li>
+                            <li><span>|</span><a href="">公司新闻</a></li>
+                            <li><span>|</span><a href="">招贤纳士</a></li>
+                            <li><span>|</span><a href="">用户反馈</a></li>
+                            <li><span>|</span><a href="">服务协议</a></li>
+                            <li><span>|</span><a href="">隐私政策</a></li>
+                            <li><span>|</span><a href="">版权声明</a></li>
+                            <li><span>|</span><a href="">自律承诺</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+        
+    </main>
+    <script src="js/scriptstyle.js"></script>
+    <script src="js/iconfont.js"></script>
+    <script src="js/jquery.js"></script>
+    <script>
+            //顶部频道鼠标移入事件
+            // var tablist=document.getElementById('faxian');
+            //     tablist.onmouseenter=function(){
+            //         console.log(tablist)
+            //         if(this.children.length!=0){
+            //             this.children[0].style.display='inline-block'
+            //         }
+            //     }
+            //     tablist.onmouseleave=function(){
+            //         if(this.children.length!=0){
+            //             this.children[0].style.display='none'
+            //         }
+            //     }
+            $('#faxian').mouseenter(function(){
+                $('#topopen_img').addClass('imglate')
+                $('.faxian ul').show()
+            })
+            $('#faxian').mouseleave(function(){
+                $('#topopen_img').removeClass('imglate')
+                $('.faxian ul').hide()
+            })
+            //顶部右边上传选项卡
+            $('.up_selcd').mouseenter(function(){
+                $('.upload_selcd').show()
+            })
+            // 鼠标移入选项卡
+            $('.upload_selcd').mouseenter(function(){
+                $('.upload_selcd').show()
+            })
+            // 鼠标移出选项卡
+            $('.upload_selcd').mouseleave(function(){
+                $('.upload_selcd').hide()
+            })
+            $('.up_selcd').mouseleave(function(){
+                $('.upload_selcd').hide()
+            })
+            // 选项卡下的图片
+            $('.myshowu').mouseenter(function(){
+                $('#showone').hide()
+                $('#myshow').show()
+            })
+            $('.myshowu').mouseleave(function(){
+                $('#myshow').hide()
+                $('#showone').show()
+            })
+            // 客户端选项卡
+            $('.pc_sel').mouseenter(function(){
+                $('.pc_selcd').show()
+            })
+            $('.pc_sel').mouseleave(function(){
+                $('.pc_selcd').hide()
+            })
+            $('.pc_selcd').mouseenter(function(){
+                $('.pc_selcd').show()
+            })
+            $('.pc_selcd').mouseleave(function(){
+                $('.pc_selcd').hide()
+            })
+            // 登录图标选项卡
+            $('#login_icon').mouseenter(function(){
+                $('.login_selcd').show()
+            })
+            $('#login_icon').mouseleave(function(){
+                $('.login_selcd').hide()
+            })
+            $('.login_selcd').mouseenter(function(){
+                $('.login_selcd').show()
+            })
+            $('.login_selcd').mouseleave(function(){
+                $('.login_selcd').hide()
+            })
+            // 点击登录图标后隐藏登录显示
+            $('#login_icon').click(function(){
+                $('.login_bg').show()
+                $('.login_win').show()
+                $('.log_exit').show()
+            })
+            $('.log_exit').click(function(){
+                $('.login_bg').hide()
+                $('.login_win').hide()
+                $('.log_exit').hide()
+            })
+            $('.login_bg').click(function(){
+                $('.login_bg').hide()
+                $('.login_win').hide()
+                $('.log_exit').hide()
+            })
+            
+            // 点击登录之后的窗口选项卡
+            $('.pwd_log').click(function(){
+                $('.login_pwd').show()
+                $('.login_res').hide()
+            })
+            $('.dx_res').click(function(){
+                $('.login_pwd').hide()
+                $('.login_res').show()
+            })
+            //底部点击向下图标显示列表事件
+            var n=0;
+            $('#open_img').click(function(){
+                console.log(111)
+                $('#open_img').addClass('imglate')
+                if(n==0){
+                    n=1;
+                    $('.boxcon').show()
+                }else{
+                    n=0;
+                    $('.boxcon').hide()
+                    $('#open_img').removeClass('imglate')
+                }
+            })
+            //底部轮播图标
+            var icon=0;
+            setInterval(function(){
+                icon++;
+                if(icon==2)icon=0;
+                // fadeIn()淡入
+                $('.lunbo_icon li').eq(icon).fadeIn(800)
+                console.log(icon)
+                $('.lunbo_icon li').eq(icon).siblings().fadeOut(800)
+            },2000)
+    </script>
+</body>
+</html>

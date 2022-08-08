@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/datalist.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <title>城南旧事</title>
+</head>
+<body>
+    <div class="login_bg">
+        
+    </div>
+    <!-- 固定定位下载 -->
+    <div class="win_dwon">
+        <img src="../images/pc_xiazai.png" alt="">
+        <p>云端同步、一键下载</p>
+        <p>更好的收听体验！</p>
+        <a href="" type="button">下载客户端</a>
+    </div>
+    <div class="login_win">
+        <!-- 密码登录or短信登录/注册选项 -->
+        <div class="login_top">
+            <ul>
+                <li class="pwd_log">密码登录</li>
+                <li class="dx_res">短信登录/注册</li>
+            </ul>
+        </div>
+        <!-- 密码登录 -->
+        <div class="login_pwd">
+            <div class="phonecon">
+                <select class="selphone">
+                    <option value="">+86</option>
+                    <option value="">+886</option>
+                    <option value="">+852</option>
+                    <option value="">+853</option>
+                </select>
+                <input class="phoneipt" type="text" placeholder="手机号或邮箱">
+            </div>
+            <input type="text" placeholder="密码">
+            <button id="login_up">登录</button>
+            <!-- 登录按钮下信息 -->
+            <div class="login_dcon">
+                <div>
+                    <input type="checkbox" style="display: inline-block;">
+                    <p style="display: inline-block;">下次自动登录</p>
+                </div>
+                <span>忘记密码</span>
+            </div>
+        </div>
+        <!-- 短信登录/注册 -->
+        <div class="login_res">
+            <select>
+                <option value="">+86</option>
+                <option value="">+886</option>
+                <option value="">+852</option>
+                <option value="">+853</option>
+            </select>
+            <input type="text" placeholder="手机号">
+            <input type="text" placeholder="验证码">
+            <button>获取验证码</button>
+            <button>登录</button>
+            <!-- 登录按钮下信息 -->
+            <div class="res_dcon">
+                <p>未注册手机登录时会自动创建新账号</p>
+                <p>且代表您已同意 <a href="">《用户服务协议》</a>和<a href="">《隐私政策》</a> </p>
+            </div>
+        </div>
+        <div class="order_log">
+            <div class="order_txt">
+                <span class="order_line"></span><p>第三方账号登录</p><span class="order_line"></span>
+            </div>
+                <ul class="order_logcon">
+                    <li>
+                        <a href="">
+                            <img src="../images/wechat.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../images/qq.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../images/weibo.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <p>下载<a href="">喜马拉雅</a>，体验更多内容</p>
+        </div>
+        <div class="logbot_img">
+        </div>
+        <!-- 登录关闭 -->
+        <div class="log_exit">
+            <img src="./images/exit.png" alt="">
+        </div>
+    </div>
+    <header>
+        <div class="headtop">
+            <div class="headtop_l">
+                <a href="../index.html"><img src="../images/logo_2021_554d3ee.png" alt=""></a>
+            </div>
+            <nav>
+                <a href="#">发现</a>
+                    <div id="faxian" class="faxian_tab_link faxian">频道
+                        <img src="../images/xia.png" alt="" width="10px" id="open_img" class="">
+                        <ul >
+                            <div class="ultab">
+                                <li><a href="">小说</a></li>
+                                <li><a href="">儿童</a></li>
+                                <li><a href="">相声小说</a></li>
+                                <li><a href="">评书</a></li>
+                                <li><a href="">娱乐</a></li>
+                                <li><a href="">悬疑</a></li>
+                                <li><a href="">人文</a></li>
+                                <li><a href="">国学</a></li>
+                                <li><a href="">头条</a></li>
+                                <li><a href="">音乐</a></li>
+                                <li><a href="">历史</a></li>
+                                <li><a href="">情感</a></li>
+                                <li><a href="">投资理财</a></li>
+                                <li><a href="">个人提升</a></li>
+                                <li><a href="">健康</a></li>
+                                <li><a href="">生活</a></li>
+                                <li><a href="">影视</a></li>
+                                <li><a href="">商业管理</a></li>
+                                <li><a href="">英语</a></li>
+                                <li><a href="">少儿素养</a></li>
+                                <li><a href="">科技</a></li>
+                                <li><a href="">教育考试</a></li>
+                                <li><a href="">体育</a></li>
+                                <li><a href="">小语种</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                <a href="#">电台</a>
+            </nav>
+            <div class="topsearch">
+                <input type="text" placeholder="  专辑/声音/主播">
+                <button></button>
+                <span class="iconfont icon-sousuo"></span>
+            </div>
+            <div class="topright">
+                <a href="" class="up_selcd">
+                    <div class="topright_one" style="height: 78px;">
+                        <img src="../images/upload.png" alt="">
+                        <img src="../images/upload (1).png" alt="">
+                        <span>上传</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="topright_two">
+                        <img src="../images/czzx.png" alt="">
+                        <img src="../images/czzx(1).png" alt="">
+                        <span>创作者中心</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="topright_three">
+                        <img src="../images/a16gl-A.png" alt="">
+                        <img src="../images/a16gl-A (1).png" alt="">
+                        <span>有声出版</span>
+                    </div>
+                </a>
+                <a href="" class="pc_sel" style="height: 80px;">
+                    <div class="topright_four">
+                        <img src="../images/pc.png" alt="">
+                        <img src="../images/pc (1).png" alt="">
+                        <span>客户端</span>
+                        <span>送VIP</span>
+                    </div>
+                </a>
+                <a href="###" id="login_icon" style="height: 80px;">
+                    <img src="../images/default_9c0f537.png" alt="">
+                </a>
+            </div>
+            <div class="upload_selcd">
+                <div class="selcd_u">
+                    <a href="">
+                        <div class="u_o">
+                            <img src="../images/bot02.png" alt="">
+                            <span>音频剪辑</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="u_one">
+                            <img src="../images/upload.png" alt="">
+                            <img src="../images/upload (1).png" alt="">
+                            <span>上传节目</span>
+                        </div>
+                    </a>
+                    <a href="" class="myshowu">
+                        <div class="u_two">
+                            <img src="../images/video0.png" alt="">
+                            <img src="../images/video (1).png" alt="">
+                            <span>我的节目</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="u_three">
+                            <img src="../images/a16gl-V.png" alt="">
+                            <img src="../images/a16gl-V (1).png" alt="">
+                            <span>主播入驻</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="selcd_d">
+                    <img id="showone" src="../images/audio_editor_1eca741.png" alt="">
+                    <img id="myshow" src="../images/approve_entrance_193bf71.jpg" alt="">
+                </div>
+            </div>
+            <!-- 客户端选项卡 -->
+            <div class="pc_selcd">
+                <img src="../images/pc_banner_f6d4929.png" alt="">
+            </div>
+            <!-- 登录选项卡 -->
+            <div class="login_selcd">
+                <div class="login_u">
+                    <img src="../images/Bitmap_5973392.png" alt="">
+                    <span>未登录</span>
+                </div>
+                <div class="login_d">
+                    <p>快速登录</p>
+                    <ul class="log_wrap">
+                        <li>
+                            <a href="">
+                                <img src="../images/pclog.png" alt="">
+                                <span>账号</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../images/ewm.png" alt="">
+                                <span>二维码</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../images/wechat.png" alt="">
+                                <span>微信</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../images/weibo.png" alt="">
+                                <span>微博</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../images/qq.png" alt="">
+                                <span>QQ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="data_top">
+            <p>首页>有声书>城南旧事</p>
+        </div>
+        <div class="con">
+            <div class="con_left">
+                <div class="left_top">
+                    <div class="left_img">
+                        <img src="../images/book05.jpg" alt="">
+                        <img src="../images/cover-right_dd0ab25.png" alt="">
+                    </div>
+                    <div class="left_text">
+                        <div class="left_up">
+                            <div class="text_top">
+                                <span>完本</span><p>城南旧事</p>
+                            </div>
+                            <p>
+                                <img src="../images/audio.png" alt="">
+                                2.2万
+                            </p>
+                        </div>
+                        <div class="text_d">
+                            <button>6元升会员，免费听</button>
+                            <button>购买|7.99喜点</button>
+                            <ul>
+                                <li><a href="">下载</a></li>
+                                <li><a href="">订阅</a></li>
+                                <li><a href="">分享</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="left_textcon">
+                    <p>【内容简介】</p>
+                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。经常痴立在胡同口寻找女儿的“疯”女人秀贞，是英子的一个朋友。秀贞曾与一个大学生思康暗中相爱，后来思康回了老家，再也没回来。秀贞生下的女儿小桂子又被家人送到城墙根脚下，不知去向。英子对她非常同情，于是答应帮秀贞找小桂子。英子在不经意间发现妞儿的身世与小桂子极其相似，又发现她脖颈后的青记，急忙带她去找秀贞。秀贞与离散六年的女儿相认后，立刻带妞儿去找寻爸爸。但最终在赶火车时母女二人一同丧命于火车下。英子发着高烧，昏迷了十天，差点丢了性命。后来英子一家迁居新帘子胡同。英子又在附近的荒园中认识了一个厚嘴唇的年轻人。他为了供给弟弟上学，不得不去偷东西。英子觉得他很善良，但又分不清他是好人还是坏人。不久，英子在荒草地上捡到一个小铜佛，被便衣警察发现，带巡警来抓走了这个年轻人，这件事使英子非常难过，因为失去了一个朋友。后来，兰姨娘来到英子家，英子发现爸爸对兰姨娘的态度不对，英子想了一个办法，把兰姨娘介绍给德先叔，后来他们俩相爱，最后他们一起乘马车走了。英子九岁那年，她的奶妈宋妈的丈夫来到林家。英子得知宋妈的儿子两年前被淹死，女儿也被丈夫送给了一对没有儿女的骑三轮的夫妇，心里十分伤心，不明白宋妈为什么撇下自己的孩子不管，来伺候别人。后来，宋妈也被她丈夫用小毛驴接走了。最后，英子的爸爸也因肺病去世。英子因为爸爸的离开，体会到了自己的责任，觉得自己长大了。</p>
+                    <p>【作者简介】</p>
+                    <p>林海音</p>
+                    <p>原名林含英，小名英子，台湾作家。被称为“台湾文学的祖母级人物”，1998年荣获“终身成就奖”。</p>
+                    <span class="takeup">收起<img src="../images/shang.png" alt=""></span>
+                </div>
+                <div class="trans_bg">
+                    <p>更多全部<img src="../images/xia.png" alt=""></p>
+                </div>
+                <div class="lister_con">
+                    <p>
+                        <a href="">声音（24）</a>
+                        <a href="">评价（1）</a>
+                    </p>
+                    <p>
+                        <a href="">正序</a>
+                        <span>&nbsp;|&nbsp;</span>
+                        <a href="">倒序</a>
+                    </p>
+                </div>
+                <div class="lister_list">
+                    <ul class="lister_ul">
+                        <li class="lister_li">
+                            <div class="l_list_l">
+                                <div class="l_one">
+                                    <span class="list_l">试听</span>
+                                    <img class="m_left" src="../images/bofang2.png" alt="">
+                                </div>
+                                <p>城南旧事预告</p>
+                            </div>
+                            <div class="l_list_r">
+                                <p>
+                                    <div class="m_new">
+                                        <img  src="../images/xihuan.png" alt="">
+                                        <img  src="../images/fenxiang.png" alt="">
+                                        <img  src="../images/pinglun.png" alt="">
+                                    </div>
+                                    <p class="m_rig"><img src="../images/audio.png" alt="">2831</p>
+                                </p>
+                                <p>三年前</p>
+                            </div>
+                        </li>
+                        <li class="lister_li">
+                            <div class="l_list_l">
+                                <div class="l_one">
+                                    <span class="list_l">试听</span>
+                                    <img class="m_left" src="../images/bofang2.png" alt="">
+                                </div>
+                                <p>城南旧事预告</p>
+                            </div>
+                            <div class="l_list_r">
+                                <p>
+                                    <div class="m_new">
+                                        <img  src="../images/xihuan.png" alt="">
+                                        <img  src="../images/fenxiang.png" alt="">
+                                        <img  src="../images/pinglun.png" alt="">
+                                    </div>
+                                    <p class="m_rig"><img src="../images/audio.png" alt="">2831</p>
+                                </p>
+                                <p>三年前</p>
+                            </div>
+                        </li>
+                        <li class="lister_li">
+                            <div class="l_list_l">
+                                <div class="l_one">
+                                    <span class="list_l">试听</span>
+                                    <img class="m_left" src="../images/bofang2.png" alt="">
+                                </div>
+                                <p>城南旧事预告</p>
+                            </div>
+                            <div class="l_list_r">
+                                <p>
+                                    <div class="m_new">
+                                        <img  src="../images/xihuan.png" alt="">
+                                        <img  src="../images/fenxiang.png" alt="">
+                                        <img  src="../images/pinglun.png" alt="">
+                                    </div>
+                                    <p class="m_rig"><img src="../images/audio.png" alt="">2831</p>
+                                </p>
+                                <p>三年前</p>
+                            </div>
+                        </li>
+                        <li class="lister_li">
+                            <div class="l_list_l">
+                                <div class="l_one">
+                                    <span class="list_l">试听</span>
+                                    <img class="m_left" src="../images/bofang2.png" alt="">
+                                </div>
+                                <p>城南旧事预告</p>
+                            </div>
+                            <div class="l_list_r">
+                                <p>
+                                    <div class="m_new">
+                                        <img  src="../images/xihuan.png" alt="">
+                                        <img  src="../images/fenxiang.png" alt="">
+                                        <img  src="../images/pinglun.png" alt="">
+                                    </div>
+                                    <p class="m_rig"><img src="../images/audio.png" alt="">2831</p>
+                                </p>
+                                <p>三年前</p>
+                            </div>
+                        </li>
+                        <li class="lister_li">
+                            <div class="l_list_l">
+                                <div class="l_one">
+                                    <span class="list_l">试听</span>
+                                    <img class="m_left" src="../images/bofang2.png" alt="">
+                                </div>
+                                <p>城南旧事预告</p>
+                            </div>
+                            <div class="l_list_r">
+                                <p>
+                                    <div class="m_new">
+                                        <img  src="../images/xihuan.png" alt="">
+                                        <img  src="../images/fenxiang.png" alt="">
+                                        <img  src="../images/pinglun.png" alt="">
+                                    </div>
+                                    <p class="m_rig"><img src="../images/audio.png" alt="">2831</p>
+                                </p>
+                                <p>三年前</p>
+                            </div>
+                        </li>
+                        <li class="lister_li">
+                            <div class="l_list_l">
+                                <div class="l_one">
+                                    <span class="list_l">试听</span>
+                                    <img class="m_left" src="../images/bofang2.png" alt="">
+                                </div>
+                                <p>城南旧事预告</p>
+                            </div>
+                            <div class="l_list_r">
+                                <p>
+                                    <div class="m_new">
+                                        <img  src="../images/xihuan.png" alt="">
+                                        <img  src="../images/fenxiang.png" alt="">
+                                        <img  src="../images/pinglun.png" alt="">
+                                    </div>
+                                    <p class="m_rig"><img src="../images/audio.png" alt="">2831</p>
+                                </p>
+                                <p>三年前</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="mouse_con" id="mouse_new">
+                    <div class="l_list_new">
+                        <img src="../images/bofang2.png" alt="">
+                    </div>
+                    <div class="l_list_rnew">
+                        <p><img src="../images/xihuan.png" alt="">
+                        <img src="../images/fenxiang.png" alt="">
+                        <img src="../images/pinglun.png" alt="">
+                        </p>
+                    </div>
+                </div> -->
+            </div>
+            <div class="con_right">
+                <div class="r_top">
+                    <img src="../images/pc_d5fa42c.png" alt="">
+                    <div class="top_text">
+                        <p>安装喜马拉雅PC版</p>
+                        <p>下载后随时听</p>
+                    </div>
+                    <a href="" type="button">立即下载</a>
+                </div>
+                <div class="author">
+                    <div class="author_top">
+                        <img src="../images/user.png" alt=""><p>专辑主播</p>
+                    </div>
+                    <div class="author_con">
+                        <div class="con_icon">
+                            <img src="../images/author_icon.jpg" alt="">
+                            <img src="../images/jiahao.png" alt="">
+                            <p><a>优声传媒工作室</a></p>
+                            <img src="../images/viptwo.png" alt="">
+                            <img src="../images/lv13.png" alt="">
+                        </div>
+                        <div class="con_hot">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="../images/shouyin.png" alt=""><span>1.9万</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../images/eye.png" alt=""><span>80</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../images/users.png" alt=""><span>20.9万</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="intr">
+                            <p>简介：欢迎加入优声传媒小说粉丝群，群聊号码：123123123</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="author_order">
+                    <div class="order_top">
+                        <img src="../images/bofang.png" alt=""><p>TA的专辑</p>
+                        <a href="">更多</a>
+                    </div>
+                    <div class="order_con">
+                        <div class="order_l_img">
+                            <img src="../images/order01.jpg" alt="">
+                        </div>
+                        <div class="order_con_txt">
+                            <div class="order_right_o">
+                                <p>末世之女配是仙</p>
+                            </div>
+                            <div class="order_right_t">
+                                <img src="../images/audio.png" alt="">
+                                <span>181.8万</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order_con">
+                        <div class="order_l_img">
+                            <img src="../images/order01.jpg" alt="">
+                        </div>
+                        <div class="order_con_txt">
+                            <div class="order_right_o">
+                                <p>末世之女配是仙</p>
+                            </div>
+                            <div class="order_right_t">
+                                <img src="../images/audio.png" alt="">
+                                <span>181.8万</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order_con">
+                        <div class="order_l_img">
+                            <img src="../images/order01.jpg" alt="">
+                        </div>
+                        <div class="order_con_txt">
+                            <div class="order_right_o">
+                                <p>末世之女配是仙</p>
+                            </div>
+                            <div class="order_right_t">
+                                <img src="../images/audio.png" alt="">
+                                <span>181.8万</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order_con">
+                        <div class="order_l_img">
+                            <img src="../images/order01.jpg" alt="">
+                        </div>
+                        <div class="order_con_txt">
+                            <div class="order_right_o">
+                                <p>末世之女配是仙</p>
+                            </div>
+                            <div class="order_right_t">
+                                <img src="../images/audio.png" alt="">
+                                <span>181.8万</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order_con">
+                        <div class="order_l_img">
+                            <img src="../images/order01.jpg" alt="">
+                        </div>
+                        <div class="order_con_txt">
+                            <div class="order_right_o">
+                                <p>末世之女配是仙</p>
+                            </div>
+                            <div class="order_right_t">
+                                <img src="../images/audio.png" alt="">
+                                <span>181.8万</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rec">
+                    <div class="rec_top">
+                        <img src="../images/bofang.png" alt=""><p>相关推荐</p>
+                        <a href="" class="shownew">
+                            <img src="../images/new.png" alt="">
+                            换一批
+                        </a>
+                    </div>
+                    <div class="order_con">
+                        <div class="order_l_img">
+                            <img src="../images/order01.jpg" alt="">
+                        </div>
+                        <div class="order_con_txt">
+                            <div class="order_right_o">
+                                <p>末世之女配是仙</p>
+                            </div>
+                            <div class="order_right_t">
+                                <img src="../images/audio.png" alt="">
+                                <span>181.8万</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order_con">
+                        <div class="order_l_img">
+                            <img src="../images/order01.jpg" alt="">
+                        </div>
+                        <div class="order_con_txt">
+                            <div class="order_right_o">
+                                <p>末世之女配是仙</p>
+                            </div>
+                            <div class="order_right_t">
+                                <img src="../images/audio.png" alt="">
+                                <span>181.8万</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order_con">
+                        <div class="order_l_img">
+                            <img src="../images/order01.jpg" alt="">
+                        </div>
+                        <div class="order_con_txt">
+                            <div class="order_right_o">
+                                <p>末世之女配是仙</p>
+                            </div>
+                            <div class="order_right_t">
+                                <img src="../images/audio.png" alt="">
+                                <span>181.8万</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <div class="bottoms_list">
+            <ul class="botlist">
+                <li class="botlists">
+                    <a href="">
+                        <img src="../images/bot01.png" alt="">
+                        <p>开放平台</p>
+                        <p>对接海量精彩内容</p>
+                    </a>
+                </li>
+                <li class="botlists">
+                    <a href="">
+                        <img src="../images/bot02.png" alt="">
+                        <p>云剪辑</p>
+                        <p>在线音频剪辑神奇</p>
+                    </a>
+                </li>
+                <li class="botlists">
+                    <a href="">
+                        <img src="../images/bot03.png" alt="">
+                        <p>主播培训</p>
+                        <p>兼职副业，兴趣赚钱</p>
+                    </a>
+                </li>
+                <li class="botlists">
+                    <a href="">
+                        <img src="../images/bot04.png" alt="">
+                        <p>小雅智能</p>
+                        <p>智能硬件，连接赋能</p>
+                    </a>
+                </li>
+                <li class="botlists">
+                    <a href="">
+                        <img src="../images/bot05.png" alt="">
+                        <p>车联网平台</p>
+                        <p>自在出行，听我想听</p>
+                    </a>
+                </li>
+                <li class="botlists">
+                    <a href="">
+                        <img src="../images/bot06.png" alt="">
+                        <p>企业版</p>
+                        <p>员工学习，企业买单</p>
+                    </a>
+                </li>
+                <li class="botbtn">
+                    <button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机端</button>
+                    <img src="../images/windows-fill.png" alt="">
+                    <button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电脑端</button>
+                    <img src="../images/down.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="bottext">
+            <ul class="aboutwe">
+                <li><a href="">关于我们</a></li>
+                <li><span>|</span><a href="">联系我们</a></li>
+                <li><span>|</span><a href="">求助辟谣</a></li>
+                <li><span>|</span><a href="">公司新闻</a></li>
+                <li><span>|</span><a href="">招贤纳士</a></li>
+                <li><span>|</span><a href="">用户反馈</a></li>
+                <li><span>|</span><a href="">服务协议</a></li>
+                <li><span>|</span><a href="">隐私政策</a></li>
+                <li><span>|</span><a href="">版权声明</a></li>
+                <li><span>|</span><a href="">自律承诺</a></li>
+            </ul>
+            <p>Copyright © 2012-2022 www.ximalaya.com lnc. ALL Rights Reserved  <a>沪ICP备13027243号</a>  客服热线：400-838-5616</p>
+        </div>
+    </main>
+
+    <script src="../js/scriptstyle.js"></script>
+    <script src="../js/iconfont.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script>
+            $('#faxian').mouseenter(function(){
+                $('#open_img').addClass('imglate')
+                $('.faxian ul').show()
+            })
+            $('#faxian').mouseleave(function(){
+                $('#open_img').removeClass('imglate')
+                $('.faxian ul').hide()
+            })
+            //顶部右边上传选项卡
+            $('.up_selcd').mouseenter(function(){
+                $('.upload_selcd').show()
+            })
+            // 鼠标移入选项卡
+            $('.upload_selcd').mouseenter(function(){
+                $('.upload_selcd').show()
+            })
+            // 鼠标移出选项卡
+            $('.upload_selcd').mouseleave(function(){
+                $('.upload_selcd').hide()
+            })
+            $('.up_selcd').mouseleave(function(){
+                $('.upload_selcd').hide()
+            })
+            // 选项卡下的图片
+            $('.myshowu').mouseenter(function(){
+                $('#showone').hide()
+                $('#myshow').show()
+            })
+            $('.myshowu').mouseleave(function(){
+                $('#myshow').hide()
+                $('#showone').show()
+            })
+            // 客户端选项卡
+            $('.pc_sel').mouseenter(function(){
+                $('.pc_selcd').show()
+            })
+            $('.pc_sel').mouseleave(function(){
+                $('.pc_selcd').hide()
+            })
+            $('.pc_selcd').mouseenter(function(){
+                $('.pc_selcd').show()
+            })
+            $('.pc_selcd').mouseleave(function(){
+                $('.pc_selcd').hide()
+            })
+            // 登录图标选项卡
+            $('#login_icon').mouseenter(function(){
+                $('.login_selcd').show()
+            })
+            $('#login_icon').mouseleave(function(){
+                $('.login_selcd').hide()
+            })
+            $('.login_selcd').mouseenter(function(){
+                $('.login_selcd').show()
+            })
+            $('.login_selcd').mouseleave(function(){
+                $('.login_selcd').hide()
+            })
+            // 点击登录图标后隐藏登录显示
+            $('#login_icon').click(function(){
+                $('.login_bg').show()
+                $('.login_win').show()
+                $('.log_exit').show()
+            })
+            $('.log_exit').click(function(){
+                $('.login_bg').hide()
+                $('.login_win').hide()
+                $('.log_exit').hide()
+            })
+            $('.login_bg').click(function(){
+                $('.login_bg').hide()
+                $('.login_win').hide()
+                $('.log_exit').hide()
+            })
+            // 点击登录之后的窗口选项卡
+            $('.pwd_log').click(function(){
+                $('.login_pwd').show()
+                $('.login_res').hide()
+            })
+            $('.dx_res').click(function(){
+                $('.login_pwd').hide()
+                $('.login_res').show()
+            })
+            // 展开更多
+            $('.trans_bg').click(function(){
+                // $('.trans_bg').animate("Linear")
+                // $('.left_textcon').animate({height:'700px'},1000,"Linear")
+                $('.left_textcon').animate({"height":"700px"})
+                $('.trans_bg').hide()
+            })
+            $('.takeup').click(function(){
+                $('.trans_bg').show()
+                $('.left_textcon').animate({"height":"300px"})
+            })
+            // 鼠标移入
+            $('.lister_li').mouseenter(function(){
+                var idx=$(this).index();
+                console.log(idx);
+                $('.list_l').eq(idx).hide();
+                $('.m_rig').eq(idx).hide();
+                $('.m_left').eq(idx).show();
+                $('.m_new').eq(idx).show();
+                // $('.list_l').eq(idx).css('display','none')
+                // $('.m_rig').eq(idx).css('display','none')
+                // $('.m_left').eq(idx).css('display','inline-block')
+                // $('.m_new').eq(idx).css('display','inline-block')
+            })
+            $('.lister_li').mouseleave(function(){
+                var idx=$(this).index();
+                console.log(idx);
+                $('.list_l').eq(idx).show();
+                $('.m_rig').eq(idx).show();
+                $('.m_left').eq(idx).hide();
+                $('.m_new').eq(idx).hide();
+            })
+            // $('.lister_list ul li').mouseenter(function(){
+            //     var idx=$(this).index()
+            //     console.log(idx)
+            //     $(idx).attr('id','#mouse_new');
+            //     $(idx).siblings().removeClass('#mouse_new');
+            // })  
+    </script>
+</body>
+</html>

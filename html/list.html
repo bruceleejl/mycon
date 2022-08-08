@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <title>列表页</title>
+</head>
+<body>
+    <div class="login_bg">
+        
+    </div>
+    <!-- 固定定位下载 -->
+    <div class="win_dwon">
+        <img src="../images/pc_xiazai.png" alt="">
+        <p>云端同步、一键下载</p>
+        <p>更好的收听体验！</p>
+        <a href="" type="button">下载客户端</a>
+    </div>
+    <div class="login_win">
+        <!-- 密码登录or短信登录/注册选项 -->
+        <div class="login_top">
+            <ul>
+                <li class="pwd_log">密码登录</li>
+                <li class="dx_res">短信登录/注册</li>
+            </ul>
+        </div>
+        <!-- 密码登录 -->
+        <div class="login_pwd">
+            <div class="phonecon">
+                <select class="selphone">
+                    <option value="">+86</option>
+                    <option value="">+886</option>
+                    <option value="">+852</option>
+                    <option value="">+853</option>
+                </select>
+                <input class="phoneipt" type="text" placeholder="手机号或邮箱">
+            </div>
+            <input type="text" placeholder="密码">
+            <button id="login_up">登录</button>
+            <!-- 登录按钮下信息 -->
+            <div class="login_dcon">
+                <div>
+                    <input type="checkbox" style="display: inline-block;">
+                    <p style="display: inline-block;">下次自动登录</p>
+                </div>
+                <span>忘记密码</span>
+            </div>
+        </div>
+        <!-- 短信登录/注册 -->
+        <div class="login_res">
+            <select>
+                <option value="">+86</option>
+                <option value="">+886</option>
+                <option value="">+852</option>
+                <option value="">+853</option>
+            </select>
+            <input type="text" placeholder="手机号">
+            <input type="text" placeholder="验证码">
+            <button>获取验证码</button>
+            <button>登录</button>
+            <!-- 登录按钮下信息 -->
+            <div class="res_dcon">
+                <p>未注册手机登录时会自动创建新账号</p>
+                <p>且代表您已同意 <a href="">《用户服务协议》</a>和<a href="">《隐私政策》</a> </p>
+            </div>
+        </div>
+        <div class="order_log">
+            <div class="order_txt">
+                <span class="order_line"></span><p>第三方账号登录</p><span class="order_line"></span>
+            </div>
+                <ul class="order_logcon">
+                    <li>
+                        <a href="">
+                            <img src="../images/wechat.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../images/qq.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../images/weibo.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <p>下载<a href="">喜马拉雅</a>，体验更多内容</p>
+        </div>
+        <div class="logbot_img">
+        </div>
+        <!-- 登录关闭 -->
+        <div class="log_exit">
+            <img src="./images/exit.png" alt="">
+        </div>
+    </div>
+    <header>
+        <div class="headtop">
+            <div class="headtop_l">
+                <a href="../index.html"><img src="../images/logo_2021_554d3ee.png" alt=""></a>
+            </div>
+            <nav>
+                <a href="#">发现</a>
+                    <div id="faxian" class="faxian_tab_link faxian">频道
+                        <img src="../images/xia.png" alt="" width="10px" id="open_img" class="">
+                        <ul >
+                            <div class="ultab">
+                                <li><a href="">小说</a></li>
+                                <li><a href="">儿童</a></li>
+                                <li><a href="">相声小说</a></li>
+                                <li><a href="">评书</a></li>
+                                <li><a href="">娱乐</a></li>
+                                <li><a href="">悬疑</a></li>
+                                <li><a href="">人文</a></li>
+                                <li><a href="">国学</a></li>
+                                <li><a href="">头条</a></li>
+                                <li><a href="">音乐</a></li>
+                                <li><a href="">历史</a></li>
+                                <li><a href="">情感</a></li>
+                                <li><a href="">投资理财</a></li>
+                                <li><a href="">个人提升</a></li>
+                                <li><a href="">健康</a></li>
+                                <li><a href="">生活</a></li>
+                                <li><a href="">影视</a></li>
+                                <li><a href="">商业管理</a></li>
+                                <li><a href="">英语</a></li>
+                                <li><a href="">少儿素养</a></li>
+                                <li><a href="">科技</a></li>
+                                <li><a href="">教育考试</a></li>
+                                <li><a href="">体育</a></li>
+                                <li><a href="">小语种</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                <a href="#">电台</a>
+            </nav>
+            <div class="topsearch">
+                <input type="text" placeholder="  专辑/声音/主播">
+                <button></button>
+                <span class="iconfont icon-sousuo"></span>
+            </div>
+            <div class="topright">
+                <a href="" class="up_selcd">
+                    <div class="topright_one" style="height: 78px;">
+                        <img src="../images/upload.png" alt="">
+                        <img src="../images/upload (1).png" alt="">
+                        <span>上传</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="topright_two">
+                        <img src="../images/czzx.png" alt="">
+                        <img src="../images/czzx(1).png" alt="">
+                        <span>创作者中心</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="topright_three">
+                        <img src="../images/a16gl-A.png" alt="">
+                        <img src="../images/a16gl-A (1).png" alt="">
+                        <span>有声出版</span>
+                    </div>
+                </a>
+                <a href="" class="pc_sel" style="height: 80px;">
+                    <div class="topright_four">
+                        <img src="../images/pc.png" alt="">
+                        <img src="../images/pc (1).png" alt="">
+                        <span>客户端</span>
+                        <span>送VIP</span>
+                    </div>
+                </a>
+                <a href="###" id="login_icon" style="height: 80px;">
+                    <img src="../images/default_9c0f537.png" alt="">
+                </a>
+            </div>
+            <div class="upload_selcd">
+                <div class="selcd_u">
+                    <a href="">
+                        <div class="u_o">
+                            <img src="../images/bot02.png" alt="">
+                            <span>音频剪辑</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="u_one">
+                            <img src="../images/upload.png" alt="">
+                            <img src="../images/upload (1).png" alt="">
+                            <span>上传节目</span>
+                        </div>
+                    </a>
+                    <a href="" class="myshowu">
+                        <div class="u_two">
+                            <img src="../images/video0.png" alt="">
+                            <img src="../images/video (1).png" alt="">
+                            <span>我的节目</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="u_three">
+                            <img src="../images/a16gl-V.png" alt="">
+                            <img src="../images/a16gl-V (1).png" alt="">
+                            <span>主播入驻</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="selcd_d">
+                    <img id="showone" src="../images/audio_editor_1eca741.png" alt="">
+                    <img id="myshow" src="../images/approve_entrance_193bf71.jpg" alt="">
+                </div>
+            </div>
+            <!-- 客户端选项卡 -->
+            <div class="pc_selcd">
+                <img src="../images/pc_banner_f6d4929.png" alt="">
+            </div>
+            <!-- 登录选项卡 -->
+            <div class="login_selcd">
+                <div class="login_u">
+                    <img src="../images/Bitmap_5973392.png" alt="">
+                    <span>未登录</span>
+                </div>
+                <div class="login_d">
+                    <p>快速登录</p>
+                    <ul class="log_wrap">
+                        <li>
+                            <a href="">
+                                <img src="../images/pclog.png" alt="">
+                                <span>账号</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../images/ewm.png" alt="">
+                                <span>二维码</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../images/wechat.png" alt="">
+                                <span>微信</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../images/weibo.png" alt="">
+                                <span>微博</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../images/qq.png" alt="">
+                                <span>QQ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- 列表页顶部 -->
+        <div class="listtop">
+            <!-- 顶部第一行内容 -->
+            <div class="topone">
+                <p>首页>全部频道>小说</p>
+            </div>
+            <!-- 第一块导航栏 -->
+            <div class="navone">
+                <ul >
+                    <li><a href=""  class="little_book">小说</a></li>
+                    <li><a href="" class="order_book">儿童</a></li>
+                    <li><a href="" class="order_book">相声小说</a></li>
+                    <li><a href="" class="order_book">评书</a></li>
+                    <li><a href="" class="order_book">娱乐</a></li>
+                    <li><a href="" class="order_book">悬疑</a></li>
+                    <li><a href="" class="order_book">人文</a></li>
+                    <li><a href="" class="order_book">国学</a></li>
+                    <li><a href="" class="order_book">头条</a></li>
+                    <li><a href="" class="order_book">音乐</a></li>
+                    <li><a href="" class="order_book">历史</a></li>
+                    <li><a href="" class="order_book">情感</a></li>
+                    <li><a href="" class="order_book">投资理财</a></li>
+                    <li><a href="" class="order_book">个人提升</a></li>
+                    <li><a href="" class="order_book">健康</a></li>
+                    <li><a href="" class="order_book">生活</a></li>
+                    <li><a href="" class="order_book">影视</a></li>
+                    <li><a href="" class="order_book">商业管理</a></li>
+                    <li><a href="" class="order_book">英语</a></li>
+                    <li><a href="" class="order_book">少儿素养</a></li>
+                    <li><a href="" class="order_book">科技</a></li>
+                    <li><a href="" class="order_book">教育考试</a></li>
+                    <li><a href="" class="order_book">体育</a></li>
+                    <li><a href="" class="order_book">小语种</a></li>
+                </ul>
+            </div>
+            <!-- 第二块导航栏 -->
+            <div class="navtwo">
+                <ul>
+                    <li><a href="" class="navtwo_no">不限</a></li>
+                    <li><a href="">男频小说</a></li>
+                    <li><a href="">女频小说</a></li>
+                    <li><a href="">都市</a></li>
+                    <li><a href="">玄幻</a></li>
+                    <li><a href="">现代言情</a></li>
+                    <li><a href="">古风言情</a></li>
+                    <li><a href="">悬疑灵异</a></li>
+                    <li><a href="">武侠</a></li>
+                    <li><a href="">仙侠</a></li>
+                    <li><a href="">军事小说</a></li>
+                    <li><a href="">浪漫青春</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 列表页内容 -->
+        <div class="listcon">
+            <div class="listcon_tab">
+                <div class="listcon_top">
+                    <div class="contop_left">
+                        <a href="">全部节目</a>
+                    </div>
+                    <div class="contop_right">
+                        <ul>
+                            <li><a class="bot_line" href="">综合排序</a></li>
+                            <li><a href="">最多播放</a></li>
+                            <li><a href="">最新播放</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lister_list">
+                    <ul>
+                        <li>
+                            <a href="../html/details.html">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../html/details.html">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="book_con">
+                                    <img src="../images/下载.png" alt="">
+                                    <img src="../images/book05.jpg" alt="">
+                                    <p>二十世纪二十年代末，六岁的小姑娘林英子住在北京城南的一条小胡同里。</p>
+                                    <p>边城旧事</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bot_pages">
+                    <ul>
+                        <li>
+                            <a href="" class="pages_one">1</a>
+                        </li>
+                        <li>
+                            <a href="">2</a>
+                        </li>
+                        <li>
+                            <a href="">3</a>
+                        </li>
+                        <li>
+                            <a href="">4</a>
+                        </li>
+                        <li>
+                            <a href="">5</a>
+                        </li>
+                        <li>
+                            <a href="" class="pages_order">...</a>
+                        </li>
+                        <li>
+                            <a href="">50</a>
+                        </li>
+                        <li>
+                            <a href="">></a>
+                        </li>
+                    </ul>
+                    <div class="pages_right">
+                        <input type="text" placeholder="请输入页码">
+                        <button>跳转</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 列表页右边内容 -->
+            <div class="listcon_right">
+                <div class="right_top">
+                    <p>全部频道</p>
+                </div>
+                <div class="right_con">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <div class="r_list_con">
+                                    <div class="l_img">
+                                        <img src="../images/listright01.jpg" alt="">
+                                    </div>
+                                    <div class="r_txt">
+                                        <p>实施快讯</p>
+                                        <p>590更新&nbsp;&nbsp;&nbsp;38.6万更新</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="r_list_con">
+                                    <div class="l_img">
+                                        <img src="../images/listright02.jpg" alt="">
+                                    </div>
+                                    <div class="r_txt">
+                                        <p>阅读</p>
+                                        <p>5950更新&nbsp;&nbsp;&nbsp;38.6万更新</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="r_list_con">
+                                    <div class="l_img">
+                                        <img src="../images/listright01.jpg" alt="">
+                                    </div>
+                                    <div class="r_txt">
+                                        <p>实施快讯</p>
+                                        <p>590更新&nbsp;&nbsp;&nbsp;38.6万更新</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="r_list_con">
+                                    <div class="l_img">
+                                        <img src="../images/listright02.jpg" alt="">
+                                    </div>
+                                    <div class="r_txt">
+                                        <p>阅读</p>
+                                        <p>5950更新&nbsp;&nbsp;&nbsp;38.6万更新</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="r_list_con">
+                                    <div class="l_img">
+                                        <img src="../images/listright01.jpg" alt="">
+                                    </div>
+                                    <div class="r_txt">
+                                        <p>实施快讯</p>
+                                        <p>590更新&nbsp;&nbsp;&nbsp;38.6万更新</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottoms_list">
+            <ul class="botlist">
+                <li class="botlists">
+                    <a href="">
+                        <img src="../images/bot01.png" alt="">
+                        <p>开放平台</p>
+                        <p>对接海量精彩内容</p>
+                    </a>
+                </li>
+                <li class="botlists">
+                    <a href="">
+                        <img src="../images/bot02.png" alt="">
+                        <p>云剪辑</p>
+                        <p>在线音频剪辑神奇</p>
+                    </a>
+                </li>
+                <li class="botlists">
+                    <a href="">
+                        <img src="../images/bot03.png" alt="">
+                        <p>主播培训</p>
+                        <p>兼职副业，兴趣赚钱</p>
+                    </a>
+                </li>
+                <li class="botlists">
+                    <a href="">
+                        <img src="../images/bot04.png" alt="">
+                        <p>小雅智能</p>
+                        <p>智能硬件，连接赋能</p>
+                    </a>
+                </li>
+                <li class="botlists">
+                    <a href="">
+                        <img src="../images/bot05.png" alt="">
+                        <p>车联网平台</p>
+                        <p>自在出行，听我想听</p>
+                    </a>
+                </li>
+                <li class="botlists">
+                    <a href="">
+                        <img src="../images/bot06.png" alt="">
+                        <p>企业版</p>
+                        <p>员工学习，企业买单</p>
+                    </a>
+                </li>
+                <li class="botbtn">
+                    <button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机端</button>
+                    <img src="../images/windows-fill.png" alt="">
+                    <button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电脑端</button>
+                    <img src="../images/down.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="bottext">
+            <ul class="aboutwe">
+                <li><a href="">关于我们</a></li>
+                <li><span>|</span><a href="">联系我们</a></li>
+                <li><span>|</span><a href="">求助辟谣</a></li>
+                <li><span>|</span><a href="">公司新闻</a></li>
+                <li><span>|</span><a href="">招贤纳士</a></li>
+                <li><span>|</span><a href="">用户反馈</a></li>
+                <li><span>|</span><a href="">服务协议</a></li>
+                <li><span>|</span><a href="">隐私政策</a></li>
+                <li><span>|</span><a href="">版权声明</a></li>
+                <li><span>|</span><a href="">自律承诺</a></li>
+            </ul>
+            <p>Copyright © 2012-2022 www.ximalaya.com lnc. ALL Rights Reserved  <a>沪ICP备13027243号</a>  客服热线：400-838-5616</p>
+        </div>
+    </main>
+
+    <script src="../js/scriptstyle.js"></script>
+    <script src="../js/iconfont.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script>
+            $('#faxian').mouseenter(function(){
+                $('#open_img').addClass('imglate')
+                $('.faxian ul').show()
+            })
+            $('#faxian').mouseleave(function(){
+                $('#open_img').removeClass('imglate')
+                $('.faxian ul').hide()
+            })
+            //顶部右边上传选项卡
+            $('.up_selcd').mouseenter(function(){
+                $('.upload_selcd').show()
+            })
+            // 鼠标移入选项卡
+            $('.upload_selcd').mouseenter(function(){
+                $('.upload_selcd').show()
+            })
+            // 鼠标移出选项卡
+            $('.upload_selcd').mouseleave(function(){
+                $('.upload_selcd').hide()
+            })
+            $('.up_selcd').mouseleave(function(){
+                $('.upload_selcd').hide()
+            })
+            // 选项卡下的图片
+            $('.myshowu').mouseenter(function(){
+                $('#showone').hide()
+                $('#myshow').show()
+            })
+            $('.myshowu').mouseleave(function(){
+                $('#myshow').hide()
+                $('#showone').show()
+            })
+            // 客户端选项卡
+            $('.pc_sel').mouseenter(function(){
+                $('.pc_selcd').show()
+            })
+            $('.pc_sel').mouseleave(function(){
+                $('.pc_selcd').hide()
+            })
+            $('.pc_selcd').mouseenter(function(){
+                $('.pc_selcd').show()
+            })
+            $('.pc_selcd').mouseleave(function(){
+                $('.pc_selcd').hide()
+            })
+            // 登录图标选项卡
+            $('#login_icon').mouseenter(function(){
+                $('.login_selcd').show()
+            })
+            $('#login_icon').mouseleave(function(){
+                $('.login_selcd').hide()
+            })
+            $('.login_selcd').mouseenter(function(){
+                $('.login_selcd').show()
+            })
+            $('.login_selcd').mouseleave(function(){
+                $('.login_selcd').hide()
+            })
+            // 点击登录图标后隐藏登录显示
+            $('#login_icon').click(function(){
+                $('.login_bg').show()
+                $('.login_win').show()
+                $('.log_exit').show()
+            })
+            $('.log_exit').click(function(){
+                $('.login_bg').hide()
+                $('.login_win').hide()
+                $('.log_exit').hide()
+            })
+            $('.login_bg').click(function(){
+                $('.login_bg').hide()
+                $('.login_win').hide()
+                $('.log_exit').hide()
+            })
+            
+            // 点击登录之后的窗口选项卡
+            $('.pwd_log').click(function(){
+                $('.login_pwd').show()
+                $('.login_res').hide()
+            })
+            $('.dx_res').click(function(){
+                $('.login_pwd').hide()
+                $('.login_res').show()
+            })
+    </script>
+</body>
+</html>

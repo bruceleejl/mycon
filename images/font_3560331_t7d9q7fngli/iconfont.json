@@ -1,0 +1,58 @@
+{
+  "id": "3560331",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "30986399",
+      "name": "上传文件-copy",
+      "font_class": "shangchuanwenjian-copy",
+      "unicode": "eb86",
+      "unicode_decimal": 60294
+    },
+    {
+      "icon_id": "2305613",
+      "name": "上传文件",
+      "font_class": "shangchuanwenjian",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "7749520",
+      "name": "16gl-A",
+      "font_class": "16gl-A",
+      "unicode": "eb85",
+      "unicode_decimal": 60293
+    },
+    {
+      "icon_id": "20763994",
+      "name": "数据上传",
+      "font_class": "shujushangchuan",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "21918600",
+      "name": "客户端",
+      "font_class": "huaban9",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "30986404",
+      "name": "16gl-A-copy",
+      "font_class": "a16gl-A-copy",
+      "unicode": "eb87",
+      "unicode_decimal": 60295
+    },
+    {
+      "icon_id": "30986405",
+      "name": "客户端-copy",
+      "font_class": "huaban9-copy",
+      "unicode": "eb88",
+      "unicode_decimal": 60296
+    }
+  ]
+}
