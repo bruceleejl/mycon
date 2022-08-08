@@ -419,6 +419,10 @@ header{
     font-weight: bolder;
     background: linear-gradient(to bottom,#fb330c,#fe603c,#ff7945);
 }
+.music{
+    bottom: 0px;
+    position: fixed;
+}
 /* 登录窗口弹出时的透明背景 */
 .login_bg{
     width: 100vw;
